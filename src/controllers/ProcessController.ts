@@ -35,15 +35,19 @@ export default class ProcessController {
     }
 
     checkBySizeFirstStep(process1, process2) {
-        return process1.id == process2.id ? process1 : process1.priority - process2.priority;
+        return process1.size == process2.size ? this.checkBySizeSecondStep(process1, process2) : process1.size - process2.size;
+    }
+
+    checkBySizeSecondStep(process1, process2) {
+        return process1.id == process2.id ? process1 : process1.id - process2.id;
     }
 
     setByPriority() {
-        return this.processList.sort((process1, process2) => process1.priority == process2.priority ? this.checkByPriority(process1, process2) : process1.priority - process2.priority);
+        return this.processList.sort((process1, process2) => this.checkByPriority(process1, process2));
     }
 
     setBySize() {
-        return this.processList.sort((process1, process2) => process1.size == process2.size ? this.checkBySize(process1, process2) : process1.size - process2.size);
+        return this.processList.sort((process1, process2) => this.checkBySize(process1, process2));
     }
 
     setByArrival() {
