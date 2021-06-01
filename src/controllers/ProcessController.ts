@@ -35,11 +35,7 @@ export default class ProcessController {
     }
 
     checkBySizeFirstStep(process1, process2) {
-        return process1.id == process2.id ? this.checkBySizeSecondStep(process1, process2) : process1.priority - process2.priority;
-    }
-
-    checkBySizeSecondStep(process1, process2) {
-        return process1.size == process2.size ? process1 : process1.size - process2.size;
+        return process1.id == process2.id ? process1 : process1.priority - process2.priority;
     }
 
     setByPriority() {
