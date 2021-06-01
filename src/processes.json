@@ -1,0 +1,60 @@
+{
+    "processes": [
+        {
+            "id": 1,
+            "process": "A",
+            "priority": 4,
+            "runtime": 2,
+            "size": 4
+        },
+        {
+            "id": 2,
+            "process": "B",
+            "priority": 2,
+            "runtime": 4,
+            "size": 2
+        },
+        {
+            "id": 3,
+            "process": "C",
+            "priority": 1,
+            "runtime": 1,
+            "size": 3
+        },
+        {
+            "id": 4,
+            "process": "D",
+            "priority": 3,
+            "runtime": 2,
+            "size": 5
+        },
+        {
+            "id": 5,
+            "process": "E",
+            "priority": 1,
+            "runtime": 1,
+            "size": 5
+        },
+        {
+            "id": 6,
+            "process": "F",
+            "priority": 5,
+            "runtime": 4,
+            "size": 6
+        },
+        {
+            "id": 7,
+            "process": "G",
+            "priority": 3,
+            "runtime": 2,
+            "size": 2
+        },
+        {
+            "id": 8,
+            "process": "H",
+            "priority": 1,
+            "runtime": 3,
+            "size": 1
+        }
+    ]
+}
